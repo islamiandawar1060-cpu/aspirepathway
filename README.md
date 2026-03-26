@@ -1,18 +1,37 @@
 # AspirePathway 🦷
-### International Dental Exam Preparation Platform
+### Empowering International Dentists for Global Excellence
 
-AspirePathway is a dedicated web platform designed to help international dentists navigate licensing exams like **NBDE (USA), NDEB (Canada), and ORE (UK)**.
-
-## 🌟 Features
-* **Step-by-Step Guides:** Clear pathways for global dental licensure.
-* **Study Resources:** Curated notes for clinical and theoretical exams.
-* **Direct Support:** Contact us via WhatsApp for personalized guidance.
-
-## 📞 Contact Information
-* **Email:** islamiandawar1060@gmail.com
-* **WhatsApp:** +92 336 9161194
-* **Website:** [Visit AspirePathway](https://yourusername.github.io/aspirepathway/)
+AspirePathway is a specialized platform designed to guide international dental graduates through the licensing process for the **USA, Canada, UK, and the Middle East.**
 
 ---
-*Built to empower the next generation of global dentists.*
 
+## 🌍 Supported Dental Exams
+
+### 🏆 Global Exams
+* **NBDE/INBDE** (United States)
+* **NDEB** (Canada)
+* **ORE/LDS** (United Kingdom)
+* **ADC** (Australia)
+
+### 🐪 Middle East Exams
+* **DHA** (Dubai Health Authority - UAE)
+* **DOH/HAAD** (Department of Health - Abu Dhabi)
+* **MOH** (Ministry of Health - UAE/Kuwait/Sharjah)
+* **SDLE** (Saudi Dental Licensing Exam - Saudi Arabia)
+* **QCHP** (Qatar Council for Healthcare Practitioners)
+* **NHRA** (National Health Regulatory Authority - Bahrain)
+
+---
+
+## 🌟 What We Offer
+* **Pathways:** Step-by-step documentation and eligibility guides.
+* **Resources:** Curated study materials for clinical and theory papers.
+* **Mentorship:** Expert advice for international candidates.
+
+## 📞 Get in Touch
+* **WhatsApp:** [+92 336 9161194](https://wa.me/923369161194)
+* **Email:** islamiandawar1060@gmail.com
+* **Live Site:** [Visit AspirePathway](https://yourusername.github.io/aspirepathway/)
+
+---
+*Helping you bridge the gap between your degree and your career.*
