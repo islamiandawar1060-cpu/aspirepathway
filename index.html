@@ -128,12 +128,30 @@ h1 { font-size: 2.8rem; }
 </div>
 </div>
 
-<div class="section">
-<h2>Get Free Sample</h2>
-<p>Join our free guidance group and get sample MCQs</p>
-<a href="YOUR_GOOGLE_FORM_LINK" class="btn">Join Now</a>
+<div style="text-align:center; padding:30px; font-family:Arial,sans-serif;">
+  <h2>Get Your Free Sample MCQs Instantly 🚀</h2>
+  <p>Enter your email below and get instant access!</p>
+
+  <input type="email" id="userEmail" placeholder="Enter your email" style="padding:10px; width:250px; border-radius:6px; border:1px solid #ccc;">
+  <button onclick="getFreeMCQs()" style="padding:10px 20px; background:#FF8C00; color:white; border:none; border-radius:6px; cursor:pointer; margin-left:5px;">
+    Get Free MCQs
+  </button>
 </div>
 
+<script>
+function getFreeMCQs() {
+  var email = document.getElementById('userEmail').value;
+  if(email === "") { alert("Please enter your email"); return; }
+
+  // OPTIONAL: Save email to Google Sheet / email list
+  // fetch('YOUR_GOOGLE_APPS_SCRIPT_URL', { method:'POST', body: JSON.stringify({email: email}), headers:{'Content-Type':'application/json'}});
+
+  // Open Gumroad link instantly
+  window.open("https://kamranwave.gumroad.com/l/quqfvc", "_blank");
+
+  document.getElementById('userEmail').value = "";
+}
+</script>
 <footer style="text-align:center; padding:20px;">
 <p>© 2026 Aspire Pathway | @_dr_kamran</p>
 </footer>
