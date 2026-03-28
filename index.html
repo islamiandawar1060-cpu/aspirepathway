@@ -3,14 +3,15 @@
 <head>
 <title>Aspire Pathway – Dental MCQs Academy</title>
 <style>
+/* ------------------ General ------------------ */
 body {
     font-family: Arial, sans-serif;
     margin:0;
-    background: #f3f6f8;
-    color: #333;
+    background: #1a1a1a; /* dark black background */
+    color: #f3f3f3; /* default text light for contrast */
 }
 header {
-    background: linear-gradient(90deg,#004080,#7a5c42); /* bluish + brown */
+    background: linear-gradient(90deg,#004080,#800000); /* blue + maroon */
     color:white;
     padding: 40px 20px;
     text-align:center;
@@ -22,6 +23,8 @@ header h1 {
 header p {
     font-size:18px;
 }
+
+/* ------------------ Navigation ------------------ */
 nav {
     text-align:center;
     margin:20px 0;
@@ -29,29 +32,35 @@ nav {
 nav a {
     margin:0 15px;
     text-decoration:none;
-    color:#004080;
+    color:#00ffff; /* turquoise for contrast */
     font-weight:bold;
 }
+
+/* ------------------ Container ------------------ */
 .container {
     width:90%;
     max-width:1000px;
     margin: 0 auto;
     padding: 20px 0;
 }
+
+/* ------------------ Cards ------------------ */
 .card {
-    background:white;
+    background:#262626; /* slightly lighter black */
     border-radius:12px;
     padding:25px;
     margin:15px 0;
-    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    box-shadow:0 4px 12px rgba(0,0,0,0.5);
 }
 .card.highlight {
     border:2px solid #004080;
 }
 .card h3 {
-    color:#004080;
+    color:#00ffff; /* turquoise headers */
     margin-top:0;
 }
+
+/* ------------------ Buttons ------------------ */
 button {
     padding:12px 20px;
     border:none;
@@ -65,19 +74,48 @@ button {
     color:white;
 }
 .buy-btn {
-    background:#7a5c42;
+    background:#800000;
     color:white;
 }
+
+/* ------------------ Section Titles ------------------ */
 .section-title {
     text-align:center;
     font-size:28px;
     margin:30px 0 15px 0;
-    color:#004080;
+    color:#00ffff;
 }
+
+/* ------------------ Payment Info ------------------ */
 .payment-info {
     text-align:center;
     font-size:14px;
     margin-top:10px;
+    color:#f3f3f3;
+}
+
+/* ------------------ Contact ------------------ */
+.contact-card {
+    background:#262626;
+    padding:20px;
+    margin:20px 0;
+    border-radius:12px;
+    text-align:center;
+}
+.contact-card h3 {
+    color:#00ffff;
+}
+.contact-card p {
+    font-size:16px;
+    color:#f3f3f3;
+}
+.contact-card a {
+    color:#800000;
+    text-decoration:none;
+    font-weight:bold;
+}
+.contact-card a:hover {
+    text-decoration:underline;
 }
 </style>
 </head>
@@ -90,6 +128,7 @@ button {
 
 <div class="container">
 
+<!-- MCQ Packages -->
 <section>
 <h2 class="section-title">📚 Our MCQ Packages</h2>
 
@@ -112,6 +151,7 @@ button {
 </div>
 </section>
 
+<!-- Premium Access -->
 <section>
 <h2 class="section-title">🔓 Access Premium MCQs</h2>
 <a href="premium.html">
@@ -119,6 +159,7 @@ button {
 </a>
 </section>
 
+<!-- Payment Options -->
 <section>
 <h2 class="section-title">💳 Payment Options</h2>
 <a href="https://wa.me/92336916194?text=Hi%20I%20want%20to%20buy%20MCQs">
@@ -131,10 +172,35 @@ Send payment screenshot via WhatsApp
 </p>
 </section>
 
+<!-- Exams We Cover -->
 <section>
 <h2 class="section-title">🌍 Exams We Cover</h2>
 <div class="card">
-<p>DHA (UAE) | MOH | ORE (UK) | ADC (Australia) | Other Middle East & International Dental Exams</p>
+<p>We help dentists prepare for:</p>
+<ul style="text-align:left; color:#f3f3f3; margin-left:20px;">
+<li>DHA (UAE)</li>
+<li>MOH (Middle East)</li>
+<li>SDLE</li>
+<li>EDRE</li>
+<li>KDLE</li>
+<li>LDS (UK)</li>
+<li>ORE (UK)</li>
+<li>INBDE (USA)</li>
+<li>NDEB (Canada)</li>
+<li>All other regional & international dental exams</li>
+</ul>
+<p>We also provide <b>1:1 counselling & consultation</b> for exam preparation and career guidance.</p>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section>
+<h2 class="section-title">📞 Contact Me</h2>
+<div class="contact-card">
+<h3>Get in Touch</h3>
+<p>WhatsApp: <a href="https://wa.me/92336916194" target="_blank">03369161194</a></p>
+<p>Email: <a href="mailto:kamrandawar45022@gmail.com">kamrandawar45022@gmail.com</a></p>
+<p>Personalized guidance and support for all dental exams worldwide.</p>
 </div>
 </section>
 
