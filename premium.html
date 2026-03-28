@@ -1,47 +1,65 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Premium MCQs Access</title>
+<section id="premium">
+<h2 class="section-title">🔓 Access Premium MCQs</h2>
+
+<p style="text-align:center; color:#f3f3f3; font-size:16px;">
+After payment via Easypaisa / SadaPay, enter your unique code to unlock the PDF.<br>
+⚠️ <b>Warning:</b> Sharing this code with anyone else may result in your account being blocked.
+</p>
+
+<!-- 4500 MCQs -->
+<div class="card">
+  <h3>📘 4500 MCQs + Explanations</h3>
+  <p>Price: Rs 10,000 (~$35)</p>
+  <p>Send payment screenshot via WhatsApp: <a href="https://wa.me/92336916194?text=Hi%20I%20want%20to%20buy%20MCQs" target="_blank">Click to WhatsApp</a></p>
+  <input type="text" id="code4500" placeholder="Enter your unlock code" style="padding:8px; margin-top:10px; width:80%;">
+  <button id="unlock4500" class="premium-btn" disabled>Unlock PDF</button>
+</div>
+
+<!-- 6000 MCQs -->
+<div class="card">
+  <h3>📘 6000 MCQs (No Rationale)</h3>
+  <p>Price: Rs 9,999 (~$35)</p>
+  <p>Send payment screenshot via WhatsApp: <a href="https://wa.me/92336916194?text=Hi%20I%20want%20to%20buy%20MCQs" target="_blank">Click to WhatsApp</a></p>
+  <input type="text" id="code6000" placeholder="Enter your unlock code" style="padding:8px; margin-top:10px; width:80%;">
+  <button id="unlock6000" class="premium-btn" disabled>Unlock PDF</button>
+</div>
+
 <script>
-function checkPassword() {
-    var password = document.getElementById("pass").value;
-    if(password === "aspire786") {
-        document.getElementById("content").style.display="block";
-        document.getElementById("login").style.display="none";
+// Unlock codes (you give these to buyers after payment)
+const validCodes = {
+  "4500": "MCQ4500",
+  "6000": "MCQ6000"
+};
+
+// 4500 MCQs
+const input4500 = document.getElementById("code4500");
+const button4500 = document.getElementById("unlock4500");
+input4500.addEventListener("input", function(){
+    if(input4500.value === validCodes["4500"]){
+        button4500.disabled = false;
+        button4500.textContent = "Download PDF";
+        button4500.onclick = function(){
+            window.open("mcqs-4500-explanations.pdf","_blank");
+        }
     } else {
-        alert("Wrong Password");
+        button4500.disabled = true;
+        button4500.textContent = "Unlock PDF";
     }
-}
+});
+
+// 6000 MCQs
+const input6000 = document.getElementById("code6000");
+const button6000 = document.getElementById("unlock6000");
+input6000.addEventListener("input", function(){
+    if(input6000.value === validCodes["6000"]){
+        button6000.disabled = false;
+        button6000.textContent = "Download PDF";
+        button6000.onclick = function(){
+            window.open("mcqs-6000.pdf","_blank");
+        }
+    } else {
+        button6000.disabled = true;
+        button6000.textContent = "Unlock PDF";
+    }
+});
 </script>
-<style>
-body { font-family: Arial; background:#f3f6f8; text-align:center; padding:30px; }
-input { padding:10px; border-radius:5px; border:1px solid #ccc; }
-button { padding:10px 20px; border:none; border-radius:8px; background:#004080; color:white; cursor:pointer; font-size:16px; margin-top:10px; }
-a { display:block; margin:15px; font-size:18px; color:#004080; text-decoration:none; }
-h1,h2 { color:#004080; }
-</style>
-</head>
-<body>
-
-<div id="login">
-<h2>🔐 Enter Password to Access Premium MCQs</h2>
-<input type="password" id="pass" placeholder="Enter password">
-<br><br>
-<button onclick="checkPassword()">Unlock</button>
-</div>
-
-<div id="content" style="display:none;">
-<h1>🦷 Premium MCQs Access</h1>
-
-<h2>📘 4500 MCQs + Explanations</h2>
-<a href="mcqs-4500-explanations.pdf" target="_blank">Open PDF</a>
-
-<h2>📘 6000 MCQs (No Rationale)</h2>
-<a href="mcqs-6000.pdf" target="_blank">Open PDF</a>
-
-<h2>🔥 Full Bundle</h2>
-<a href="mcqs-full-bundle.pdf" target="_blank">Open PDF</a>
-
-</div>
-</body>
-</html>
