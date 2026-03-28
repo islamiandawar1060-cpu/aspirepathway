@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Premium MCQs</title>
-
+<title>Premium MCQs Access</title>
 <script>
 function checkPassword() {
-  var password = document.getElementById("pass").value;
-  if(password === "aspire786") {
-    document.getElementById("content").style.display = "block";
-    document.getElementById("login").style.display = "none";
-  } else {
-    alert("Wrong Password");
-  }
+    var password = document.getElementById("pass").value;
+    if(password === "aspire786") {
+        document.getElementById("content").style.display="block";
+        document.getElementById("login").style.display="none";
+    } else {
+        alert("Wrong Password");
+    }
 }
 </script>
-
+<style>
+body { font-family: Arial; background:#f3f6f8; text-align:center; padding:30px; }
+input { padding:10px; border-radius:5px; border:1px solid #ccc; }
+button { padding:10px 20px; border:none; border-radius:8px; background:#004080; color:white; cursor:pointer; font-size:16px; margin-top:10px; }
+a { display:block; margin:15px; font-size:18px; color:#004080; text-decoration:none; }
+h1,h2 { color:#004080; }
+</style>
 </head>
-
-<body style="font-family:sans-serif;text-align:center;">
+<body>
 
 <div id="login">
 <h2>🔐 Enter Password to Access Premium MCQs</h2>
@@ -27,19 +31,17 @@ function checkPassword() {
 </div>
 
 <div id="content" style="display:none;">
-
 <h1>🦷 Premium MCQs Access</h1>
 
 <h2>📘 4500 MCQs + Explanations</h2>
 <a href="mcqs-4500-explanations.pdf" target="_blank">Open PDF</a>
 
-<h2>📘 6000 MCQs</h2>
+<h2>📘 6000 MCQs (No Rationale)</h2>
 <a href="mcqs-6000.pdf" target="_blank">Open PDF</a>
 
 <h2>🔥 Full Bundle</h2>
 <a href="mcqs-full-bundle.pdf" target="_blank">Open PDF</a>
 
 </div>
-
 </body>
 </html>
