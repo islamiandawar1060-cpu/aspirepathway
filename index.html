@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Aspire Pathway – Dental MCQs Academy</title>
+<title>Aspire Pathway – Your Dental Mentor</title>
 <style>
 /* ------------------ General ------------------ */
 body {
@@ -10,19 +10,31 @@ body {
     background: #1a1a1a; /* dark black background */
     color: #f3f3f3; /* default text light for contrast */
 }
+
+/* ------------------ Header / Hero ------------------ */
 header {
     background: linear-gradient(90deg,#004080,#800000); /* blue + maroon */
     color:white;
-    padding: 40px 20px;
+    padding: 60px 20px;
     text-align:center;
 }
 header h1 {
-    font-size: 36px;
+    font-size: 40px;
     margin:0;
 }
 header p {
+    font-size:20px;
+    margin:10px 0 20px 0;
+}
+header .cta-btn {
+    background:#00ffff;
+    color:#1a1a1a;
+    padding:15px 25px;
+    border:none;
+    border-radius:8px;
     font-size:18px;
-    margin-top:5px;
+    cursor:pointer;
+    text-decoration:none;
 }
 
 /* ------------------ Container ------------------ */
@@ -31,6 +43,14 @@ header p {
     max-width:1000px;
     margin: 0 auto;
     padding: 20px 0;
+}
+
+/* ------------------ Section Titles ------------------ */
+.section-title {
+    text-align:center;
+    font-size:28px;
+    margin:30px 0 15px 0;
+    color:#00ffff;
 }
 
 /* ------------------ Cards ------------------ */
@@ -45,7 +65,7 @@ header p {
     border:2px solid #004080;
 }
 .card h3 {
-    color:#00ffff; /* turquoise headers */
+    color:#00ffff;
     margin-top:0;
 }
 
@@ -67,20 +87,25 @@ button {
     color:white;
 }
 
-/* ------------------ Section Titles ------------------ */
-.section-title {
-    text-align:center;
-    font-size:28px;
-    margin:30px 0 15px 0;
-    color:#00ffff;
-}
-
-/* ------------------ Payment Info ------------------ */
-.payment-info {
-    text-align:center;
-    font-size:14px;
-    margin-top:10px;
+/* ------------------ MCQ Details ------------------ */
+.mcq-details {
+    background:#262626;
+    padding:25px;
+    margin:20px 0;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.5);
     color:#f3f3f3;
+}
+.mcq-details h3 {
+    color:#00ffff;
+    margin-top:0;
+}
+.mcq-details ul {
+    margin-left:20px;
+    list-style-type: square;
+}
+.mcq-details p {
+    margin:10px 0;
 }
 
 /* ------------------ Contact ------------------ */
@@ -106,54 +131,69 @@ button {
 .contact-card a:hover {
     text-decoration:underline;
 }
-
-/* ------------------ MCQ Details ------------------ */
-.mcq-details {
-    background:#262626;
-    padding:25px;
-    margin:20px 0;
-    border-radius:12px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.5);
-    color:#f3f3f3;
-}
-.mcq-details h3 {
-    color:#00ffff;
-    margin-top:0;
-}
-.mcq-details ul {
-    margin-left:20px;
-    list-style-type: square;
-}
-.mcq-details p {
-    margin:10px 0;
-}
 </style>
 </head>
 <body>
 
+<!-- Hero / Mentor Section -->
 <header>
-    <h1>🦷 Aspire Pathway</h1>
-    <p>Guided by <b>Dr. Kamran</b> – Your Dental Exam Mentor</p>
+    <h1>Your Dental Mentor for Success Abroad</h1>
+    <p>Guided by <b>Dr. Kamran</b> – Helping dentists achieve their dreams abroad with step-by-step mentorship</p>
+    <p>Everyone dreams of working internationally but most don’t know where to start. I’ll guide you on what exams, what preparation, and how to succeed.</p>
+    <a href="#services" class="cta-btn">Explore Guidance</a>
 </header>
 
 <div class="container">
 
-<!-- MCQ Packages -->
-<section>
-<h2 class="section-title">📚 Our MCQ Packages</h2>
+<!-- About / Why Choose Me -->
+<section id="about">
+<h2 class="section-title">🌟 Why Choose Dr. Kamran?</h2>
+<div class="card">
+<p>With years of experience mentoring dentists for international exams, I provide:</p>
+<ul>
+<li>1:1 personalized counselling & guidance</li>
+<li>Exam-specific strategies & tips</li>
+<li>High-yield MCQ banks curated for each exam</li>
+<li>Support for Middle East and global exams</li>
+</ul>
+<p>My goal is simple: <b>help you pass your dental licensing exam the first time</b> and achieve your career goals abroad.</p>
+</div>
+</section>
 
+<!-- Exams & Services -->
+<section id="services">
+<h2 class="section-title">🦷 Exams & Services Covered</h2>
+<div class="card">
+<p>We help dentists prepare for:</p>
+<ul style="text-align:left; color:#f3f3f3; margin-left:20px;">
+<li>DHA (UAE)</li>
+<li>MOH (Middle East)</li>
+<li>SDLE</li>
+<li>EDRE</li>
+<li>KDLE</li>
+<li>LDS (UK)</li>
+<li>ORE (UK)</li>
+<li>INBDE (USA)</li>
+<li>NDEB (Canada)</li>
+<li>All other regional & international dental exams</li>
+</ul>
+<p>We also provide <b>1:1 counselling & consultation</b> for personalized preparation with <b>Dr. Kamran</b>.</p>
+</div>
+</section>
+
+<!-- MCQ Packages -->
+<section id="mcqs">
+<h2 class="section-title">📚 MCQ Packages</h2>
 <div class="card">
 <h3>📘 4500 MCQs + Explanations</h3>
 <p>High-yield questions with detailed rationale</p>
 <p><b>Rs 10,000 (~$35)</b></p>
 </div>
-
 <div class="card">
 <h3>📘 6000 MCQs (No Rationale)</h3>
 <p>Extensive MCQs for rapid revision</p>
 <p><b>Rs 9,999 (~$35)</b></p>
 </div>
-
 <div class="card highlight">
 <h3>🔥 Full Bundle</h3>
 <p>All MCQs combined (Best Value)</p>
@@ -165,78 +205,17 @@ button {
 <section>
 <h2 class="section-title">📝 Why This MCQ Bank Works</h2>
 <div class="mcq-details">
-<h3>Preparing for MOH, DHA, Prometric & Other Exams?</h3>
-<p>This 4500+ MCQ Bank, curated by <b>Dr. Kamran</b> and experienced dental educators, is designed to help dentists truly understand the material, not just memorize.</p>
-
+<h3>Prepared by Dr. Kamran & Expert Educators</h3>
+<p>These MCQs are designed to help dentists understand concepts, not just memorize answers.</p>
 <ul>
 <li>Past paper recalls from real MOH/DHA exams</li>
-<li>Upcoming high-probability questions predicted by global dental experts</li>
-<li>Full exam-focused coverage, updated for current MOH/DHA styles</li>
-<li>Organized by specialty:
-  <ul>
-    <li>Periodontology – Diseases, treatment planning</li>
-    <li>Oral Pathology – Lesions, malignancies, key conditions</li>
-    <li>Oral Medicine – Systemic diseases & oral signs</li>
-    <li>Oral Surgery – Extractions, anesthesia, complications</li>
-    <li>Prosthodontics – Dentures, crowns, bridges, implants</li>
-    <li>Operative & Restorative Dentistry – Cavity prep, materials, techniques</li>
-    <li>Endodontics – Root canal basics & scenarios</li>
-    <li>Orthodontics – Diagnosis, appliances, mechanics</li>
-    <li>Ethics in Dentistry – MOH-specific cases</li>
-    <li>Infection Control – Sterilization, prevention protocols</li>
-    <li>Public Health & Dental Materials – Preventive care, community dentistry</li>
-  </ul>
-</li>
-<li>Searchable PDF format (mobile-friendly) + Bonus Excel/Word files for self-quizzing</li>
+<li>Predicted high-probability questions by global dental experts</li>
+<li>Organized by specialty (Surgery, Prosthodontics, Endodontics, Orthodontics, etc.)</li>
+<li>Searchable PDF format + Bonus Excel/Word files for self-quizzing</li>
 <li>Perfect for MOH, DHA, Prometric, and other Middle East & international exams</li>
 <li>Instant download – start today, pass confidently tomorrow!</li>
-<li>Study smart: 100–150 questions/day + full explanation review = massive gains in weeks</li>
 </ul>
-
-<p>Topics Covered:</p>
-<ul>
-<li>Oral & Maxillofacial Surgery</li>
-<li>Endodontics</li>
-<li>Periodontology</li>
-<li>Prosthodontics</li>
-<li>Orthodontics</li>
-<li>Pediatric Dentistry</li>
-<li>Oral Pathology & Medicine</li>
-<li>Community Dentistry & Public Health</li>
-<li>Dental Materials</li>
-<li>Radiology</li>
-</ul>
-
-<p>Ideal for Exams Across the Middle East:</p>
-<ul>
-<li>UAE: MOH, DHA Dubai, DOH / HAAD Abu Dhabi</li>
-<li>Saudi Arabia: SCFHS Dental Licensing Exam</li>
-<li>Oman: Oman Ministry of Health Dental Exam</li>
-<li>Qatar: QCHP Dental Exam</li>
-<li>Bahrain: Bahrain Dental Licensing Exam</li>
-<li>Kuwait: Kuwait Ministry of Health Dental Licensing Exam</li>
-<li>Other Prometric-based exams in the region</li>
-</ul>
-
-<p><b>Why Choose This MCQ Bank:</b></p>
-<ul>
-<li>Curated by <b>Dr. Kamran</b> & dental experts</li>
-<li>Covers must-know & repeated questions</li>
-<li>Perfect for last-minute revision or full exam prep</li>
-<li>Digital format—study anytime, anywhere</li>
-<li>Focus on repeated topics, high-probability questions, and exam patterns</li>
-</ul>
-
-<p><b>Instant value:</b> Grab it today, and start drilling high-yield questions tomorrow! 🚀</p>
 </div>
-</section>
-
-<!-- Premium Access -->
-<section>
-<h2 class="section-title">🔓 Access Premium MCQs</h2>
-<a href="premium.html">
-<button class="premium-btn">Unlock Premium</button>
-</a>
 </section>
 
 <!-- Payment Options -->
@@ -252,30 +231,9 @@ Send payment screenshot via WhatsApp
 </p>
 </section>
 
-<!-- Exams We Cover -->
-<section>
-<h2 class="section-title">🌍 Exams We Cover</h2>
-<div class="card">
-<p>We help dentists prepare for:</p>
-<ul style="text-align:left; color:#f3f3f3; margin-left:20px;">
-<li>DHA (UAE)</li>
-<li>MOH (Middle East)</li>
-<li>SDLE</li>
-<li>EDRE</li>
-<li>KDLE</li>
-<li>LDS (UK)</li>
-<li>ORE (UK)</li>
-<li>INBDE (USA)</li>
-<li>NDEB (Canada)</li>
-<li>All other regional & international dental exams</li>
-</ul>
-<p>We also provide <b>1:1 counselling & consultation</b> for exam preparation and career guidance with <b>Dr. Kamran</b>.</p>
-</div>
-</section>
-
 <!-- Contact Section -->
 <section>
-<h2 class="section-title">📞 Contact Me</h2>
+<h2 class="section-title">📞 Contact Dr. Kamran</h2>
 <div class="contact-card">
 <h3>Get in Touch</h3>
 <p>WhatsApp: <a href="https://wa.me/92336916194" target="_blank">03369161194</a></p>
