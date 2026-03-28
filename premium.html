@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Premium MCQs</title>
+
+<script>
+function checkPassword() {
+  var password = document.getElementById("pass").value;
+  if(password === "aspire786") {
+    document.getElementById("content").style.display = "block";
+    document.getElementById("login").style.display = "none";
+  } else {
+    alert("Wrong Password");
+  }
+}
+</script>
+
+</head>
+
+<body style="font-family:sans-serif;text-align:center;">
+
+<div id="login">
+<h2>🔐 Enter Password to Access Premium MCQs</h2>
+<input type="password" id="pass" placeholder="Enter password">
+<br><br>
+<button onclick="checkPassword()">Unlock</button>
+</div>
+
+<div id="content" style="display:none;">
+
+<h1>🦷 Premium MCQs Access</h1>
+
+<h2>📘 4500 MCQs + Explanations</h2>
+<a href="mcqs-4500-explanations.pdf" target="_blank">Open PDF</a>
+
+<h2>📘 6000 MCQs</h2>
+<a href="mcqs-6000.pdf" target="_blank">Open PDF</a>
+
+<h2>🔥 Full Bundle</h2>
+<a href="mcqs-full-bundle.pdf" target="_blank">Open PDF</a>
+
+</div>
+
+</body>
+</html>
